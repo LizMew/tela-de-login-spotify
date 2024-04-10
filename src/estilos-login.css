@@ -1,0 +1,165 @@
+/* display: flex; define o layout como flexível.
+justify-content: center; centraliza os elementos horizontalmente.
+align-items: center; centraliza os elementos verticalmente.
+min-height: 100vh; garante que o conteúdo seja centralizado verticalmente na tela inteira, mesmo que o conteúdo seja menor que a altura da tela.
+margin: 0; remove as margens padrão do corpo da página, o que ajuda a garantir que o conteúdo seja centralizado corretamente. */
+
+body{
+    background-color: #3a3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+.formulario{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 300px;
+    height: 472px;
+    padding: 25px;
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+.corpo-do-formulario{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    left: 25px;
+    width: 230px;
+    margin: -156px auto 0 auto;
+}
+
+.texto-do-spotify{
+    text-align: center;
+    line-height: 1;
+}
+
+.texto-do-spotify-1{
+    color: #00ff7f;
+    font-weight: 600;
+    font-size: 42px;
+    font-family: "Nunito", sans-serif;
+}
+
+.texto-do-spotify-2{
+    color: #ffffff;
+    font-size:20px;
+    margin-top: 17px;
+    font-family: "Barlow", sans-serif;
+}
+
+.input-area{
+    margin-top: 150px;
+}
+
+.formulario-input{
+    padding: 11px 40px;
+    background: transparent;
+    border: 1px solid #e3e3e3;
+    line-height: 1;
+    border-radius: 8px;
+}
+
+.formulario-input:focus{
+    border: 1px solid #00ff7f;
+}
+
+.formulario-input:first-child{
+    margin-bottom: 15px;
+}
+
+.formulario-input input{
+    width: 100%;
+    background: none;
+    font-size: 13.4px;
+    color: #00ff7f;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Barlow", sans-serif
+}
+
+.formulario-input input:focus{
+    outline: none;
+}
+
+.botao-login{
+    margin-bottom: 60px;
+}
+
+.botao-envio{
+    display: block;
+    width: 100%;
+    color: #00ff7f;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 11px 90px;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: #00ff7f;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    font-family: "Barlow", sans-serif
+}
+
+.botao-envio:hover{
+    transition: all ease-in-out;
+    background-color: #00ff7f;
+    color: #161616;
+    cursor: pointer;
+}
+
+
+.texto-do-botao{
+    position: absolute;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #868686;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    bottom: 18%; 
+    left: 0%;
+    font-family: "Barlow", sans-serif
+}
+
+.texto-do-botao:hover{
+    transition: all ease-in-out 0.3s;
+    color: #e3e3e3;
+    cursor: pointer;
+}
+
+.barra{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    width: 28px;
+    height: 8px;
+    margin-left: -33px;
+    background-color: #00ff7f;
+    border-radius: 10px;
+}
+
+.barra:before,.barra:after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ececec;
+    border-radius: 50%;
+}
+
+.barra:before{
+    right: -20px;
+}
+
+.barra:after{
+    right: -38px;
+}
