@@ -1,9 +1,3 @@
-/* display: flex; define o layout como flexível.
-justify-content: center; centraliza os elementos horizontalmente.
-align-items: center; centraliza os elementos verticalmente.
-min-height: 100vh; garante que o conteúdo seja centralizado verticalmente na tela inteira, mesmo que o conteúdo seja menor que a altura da tela.
-margin: 0; remove as margens padrão do corpo da página, o que ajuda a garantir que o conteúdo seja centralizado corretamente. */
-
 body{
     background-color: #3a3a3a;
     display: flex;
@@ -79,7 +73,7 @@ body{
     border: none;
     padding: 0;
     margin: 0;
-    font-family: "Barlow", sans-serif
+    font-family: "Barlow", sans-serif;
 }
 
 .formulario-input input:focus{
@@ -91,7 +85,6 @@ body{
 }
 
 .botao-envio{
-    display: block;
     width: 100%;
     color: #00ff7f;
     background-color: transparent;
@@ -106,6 +99,8 @@ body{
     font-family: "Barlow", sans-serif
 }
 
+
+
 .botao-envio:hover{
     transition: all ease-in-out;
     background-color: #00ff7f;
@@ -113,21 +108,23 @@ body{
     cursor: pointer;
 }
 
+.esqueceu-senha{
+    text-align: center;
+    display: flex;
+    margin-top: -130px;
+}
 
-.texto-do-botao{
-    position: absolute;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.esqueceu-senha a{
     color: #868686;
-    background-color: transparent;
     font-size: 14px;
-    padding: 10px;
-    cursor: pointer;
-    bottom: 18%; 
-    left: 0%;
+    text-decoration: none;
     font-family: "Barlow", sans-serif
+}
+
+.esqueceu-senha a:hover{
+    transition: all ease-in-out 0.3s;
+    color: #e3e3e3;
+    cursor: pointer;
 }
 
 .texto-do-botao:hover{
